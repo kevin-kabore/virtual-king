@@ -1,0 +1,43 @@
+/**
+ * Global
+ */
+
+html,
+body {
+  // minimum size
+  font-size: $text-bp-min;
+
+  @include bp-small {
+    // mobile size
+    font-size: vw($text-bp-sm, $screen-bp-sm);
+  }
+
+  @include bp-medium {
+    // tablet size
+    font-size: vw($text-bp-md, $screen-bp-md);
+  }
+
+  @include bp-large {
+    // desktop size
+    font-size: vw($text-bp-lg, $screen-bp-lg);
+  }
+
+  @include bp-xlarge {
+    // maximum size
+    font-size: $text-bp-lg;
+  }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  position: relative;
+}
+
+.King *::before,
+.King *::after {
+  content: '';
+  display: block;
+  position: absolute;
+}
