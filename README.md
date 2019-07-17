@@ -1,4 +1,4 @@
-# TVGla Boilerplate - README #
+README #
 ---
 
 #Node.js and NPM
